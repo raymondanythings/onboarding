@@ -55,12 +55,7 @@ const createStore = <S extends object, A extends Action = UnknownAction>(
     });
     return unsubscribe(fn, keys);
   };
-  const store = {
-    subscribe,
-    getState,
-    dispatch,
-  };
-  return store;
+  return { subscribe, getState, dispatch };
 };
 
 export default createStore;
