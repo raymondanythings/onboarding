@@ -1,7 +1,7 @@
 const Route = ({
   component: Component,
 }: {
-  pathname: string;
+  path: string;
   component: JSX.Element;
 }) => {
   return Component;

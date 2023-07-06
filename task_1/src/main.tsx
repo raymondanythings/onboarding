@@ -9,6 +9,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
     <Router>
       <Route path="" component={<Home />} />
       <Route path="about" component={<About />} />
+      <>dfsdf</>
     </Router>
   </React.StrictMode>
 );
