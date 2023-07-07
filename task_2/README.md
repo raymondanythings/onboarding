@@ -42,6 +42,15 @@
 - 항상 최신화 된 상태를 사용해야 하기 때문에 `clousure`를 적극 활용
 ```ts
 
+type Action<T extends string = string> = {
+  type: T;
+};
+interface UnknownAction extends Action {
+  [extraProps: string]: unknown;
+}
+type Reducer<S, A extends Action = UnknownAction> = (state: S, action: A) => S;
+type SubscribeFn = <T>(...args: T[]) => void;
+
 const createStore = <S extends object, A extends Action = UnknownAction>(
   initialState: S,
   reducer: Reducer<S, A>
