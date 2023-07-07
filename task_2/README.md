@@ -6,8 +6,8 @@
 - [요구사항](#요구사항)
 - [설계](#설계)
 - [구현](#구현)
-  - [main](#maintsx)
-  - [Router](#react-router-domroutertsx)
+  - [index.ts](#indexts)
+  - [utils.ts](#utilsts)
 
 ## 요구사항
 ---
